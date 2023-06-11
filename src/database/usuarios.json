@@ -1,0 +1,18 @@
+[
+  {
+    "nombre": "Mauro",
+    "apellido": "Biassi",
+    "email": "mauroezebiassi@gmail.com",
+    "password": "$2a$10$fiISLJlbkB/3M.HhP2fyqOXfCb59C1PHsRadeZpXY07HkfK8zkMzu",
+    "avatar": "foto-1684595005173.jpg",
+    "role": 1
+  },
+  {
+    "nombre": "Paola",
+    "apellido": "Fernandez",
+    "email": "mauroezebiassi@gmail.com",
+    "password": "$2a$10$9FnC0nPfmIvG4bGIva5grusFWD5g7Mp8J5sZ1tgy2SrwGd4GrslKe",
+    "avatar": "foto-1684595275494.jpg",
+    "role": 1
+  }
+]

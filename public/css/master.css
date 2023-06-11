@@ -1,0 +1,211 @@
+*{
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+    margin: 0 ;
+}
+
+/*Esto produce un efecto, como un scroll con una transición*/
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+/*Aplicando propiedades al menú de hamburguesa*/
+.hamburguesa{
+    font-size: 25px;
+    background-color: teal;
+    color: white;
+    display: block;
+    margin: auto;
+    text-align: center;
+    max-width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/*Aplicando propiedades al menu*/
+.menu{
+    display: none;
+}
+
+.opciones{
+    list-style-type: none;
+    padding: 0;
+}
+
+.servicios{
+    text-align: justify;
+}
+
+.titulo{
+    font-size: 3rem;  
+    color: white;
+    background-color: teal; 
+    text-align: center;
+}
+
+
+img{
+    width: 100%;
+}
+.fondo{
+    background-image: url('../img/banner.jpg');
+    height: 550px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: none;
+}
+
+/*-----------------------------------------------------------------*/
+.descuento{
+    right: 15px;
+    top: 20px;
+    position: absolute;
+    width: 15%;
+}
+/*-----------------------------------------------------------------*/
+
+
+/*Al artículo le coloque posición relativa, esto produce el efecto visual de que el descuento se posiciona absolutamente, pero dentro del contenedor y no con relación al body de la página*/
+.producto{
+    opacity: 1;
+    position: relative;
+    
+}
+
+.descripcion{
+    display: none; 
+    text-align: justify;
+    padding: 10px;
+}
+
+.boton{
+    text-decoration: none;
+    font-family: 1.2rem;
+    padding: 0 10px;
+    color: white;
+    background-color: tomato;
+    border-radius: 10px;
+}
+
+.footer{
+    background-color: tomato;
+}
+
+.derechos{
+    color: white;
+}
+.opciones a{
+    margin: 0 5px;
+}
+.menuFooter{
+    display: none;
+}
+.redes a{
+    font-size: 1.2rem;
+    color: white;
+}
+
+.subir {
+    color: white;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+}
+
+.avatar{
+    width: 10%;
+}
+
+
+/*Media Queries*/
+@media (min-width:768px){
+    .encabezado{
+        display: flex;
+        background-color: rgba(0, 128,128,0.8);
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    .hamburguesa{
+        display: none;
+    }    
+    .menu{
+        display: block;
+    }
+    .logo{
+        width: 10%;
+    }
+    .menu{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        z-index: 100;
+    }
+    .opciones{
+        display: flex;
+        padding-left: 40px;
+        padding-right: 10px;
+    }
+    .opciones a{
+        color: white;
+        font-size: 1.2rem;
+        text-decoration: none;
+    }
+    .opciones a:hover{
+        color: teal;
+        background-color: white;
+        border-radius: 10px;
+    }
+    
+    /*Vuelvo a utilizar Flexbox sobre el contenedor*/
+    .nosotros{
+        display: flex;
+    }
+    .servicios, .imagenNosotros{
+        width: 50%;
+        padding: 20px;
+    }
+    
+
+    .descripcion{
+        display: block;
+    }
+
+    /*Vuelvo a incorporar Flexbox, en donde muestro los productos mas vendidos*/
+    .productos{
+        display: flex;
+        padding: 20px;
+        flex-wrap: wrap;
+        
+    }
+    .producto{
+        width: 50%;
+    }
+    .producto:hover{
+        opacity: 0.8;
+    }   
+    .fondo{
+        display: block;
+    }
+    .footer{
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+    }
+    }
+
+@media (min-width: 992px){
+    .productos{
+        flex-wrap: nowrap;
+    }
+    .menuFooter{
+        display: block;
+    }
+       
+}
